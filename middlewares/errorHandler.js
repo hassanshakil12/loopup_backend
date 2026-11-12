@@ -1,7 +1,7 @@
 const { isBoom } = require("@hapi/boom");
 
 // Constants
-const message = require("../constants/MESSAGE");
+const { MESSAGE: message } = require("../common/constants");
 
 const errorHandler = (err, req, res, next) => {
   const error = getErrorResponse(err);
